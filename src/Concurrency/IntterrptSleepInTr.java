@@ -1,11 +1,12 @@
 package Concurrency;
 
-public class ThreadTest5 {
-
+public class IntterrptSleepInTr {
     private static int counter = 0;
 
     public static void main(String[] a) {
+        // call current thread mean thread that hold lambada expression
         final var mainThread = Thread.currentThread();
+
         new Thread(() -> {
             for (int i = 0; i < 1_000_000; i++)
                 counter++;
@@ -14,7 +15,7 @@ public class ThreadTest5 {
         while (counter < 1_000_000) {
             System.out.println("Not reached yet");
             try {
-                Thread.sleep(1_000); // 1 SECOND
+                Thread.sleep(1); // 1 SECOND
             } catch (InterruptedException e) {
                 System.out.println("Interrupted!");
             }

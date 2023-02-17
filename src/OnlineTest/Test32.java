@@ -1,6 +1,6 @@
-package Concurrency;
+package OnlineTest;
 
-public class Test2 {
+public class Test32 {
     public static void main(String[] args) {
         final int score1 = 8, score2 = 3;
         char myScore = 7;

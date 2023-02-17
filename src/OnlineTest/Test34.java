@@ -1,6 +1,6 @@
-package Concurrency;
+package OnlineTest;
 
-public class Test4 {
+public class Test34 {
 
     public static void addToInt(int x, int amountToAdd) {
         x = x + amountToAdd;
@@ -16,7 +16,7 @@ public class Test4 {
 
         var a = 15;
         var b = 10;
-        Test4.addToInt(a, b);
+        Test34.addToInt(a, b);
         System.out.println(a);
     }
 }

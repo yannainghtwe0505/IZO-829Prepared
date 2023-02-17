@@ -6,7 +6,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-public class SubmittingThreadInConcurrencyApi {
+public class CApiESSubmit {
     private static int counter = 0;
 
     public static void main(String[] unused) throws Exception {
@@ -16,7 +16,9 @@ public class SubmittingThreadInConcurrencyApi {
                 for (int i = 0; i < 1_000_000; i++)
                     counter++;
             });
-            result.get(10, TimeUnit.SECONDS); // Returns null for Runnable
+            System.out.println(result.get());
+            result.get(10, TimeUnit.NANOSECONDS); // Returns null for Runnable
+            System.out.println(result.get());
             System.out.println("Reached!");
         } catch (TimeoutException e) {
             System.out.println("Not reached in time");
