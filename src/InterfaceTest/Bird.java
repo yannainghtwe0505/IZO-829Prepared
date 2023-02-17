@@ -1,9 +1,9 @@
-package pkg2;
+package InterfaceTest;
 
 public class Bird implements Vegetarian {
 
     @Override
-     public void eat() {
+    public void eat() {
         System.out.println("Eat Something");
     }
 

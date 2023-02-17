@@ -1,4 +1,5 @@
-package pkg2;
+package InterfaceTest;
+
 public class Animal {
 
     public void feed() {
