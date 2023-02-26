@@ -17,7 +17,7 @@ public class CApiESSubmit {
                     counter++;
             });
             System.out.println(result.get());
-            result.get(10, TimeUnit.NANOSECONDS); // Returns null for Runnable
+            result.get(1, TimeUnit.MINUTES); // Returns null for Runnable
             System.out.println(result.get());
             System.out.println("Reached!");
         } catch (TimeoutException e) {

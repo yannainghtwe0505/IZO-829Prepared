@@ -14,7 +14,7 @@ public class CApiESCallable {
         } finally {
             service.shutdown();
         }
-        service.awaitTermination(1, TimeUnit.MINUTES);
+        service.awaitTermination(1, TimeUnit.SECONDS);
         // Check whether all tasks are finished
         if (service.isTerminated())
             System.out.println("Finished!");
