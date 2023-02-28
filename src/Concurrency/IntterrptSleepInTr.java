@@ -16,9 +16,9 @@ public class IntterrptSleepInTr {
         }).start();
         while (counter < 1_000_000) {
             System.out.println("Not reached yet");
-//            System.out.println(LocalDateTime.now());
+            // System.out.println(LocalDateTime.now());
             try {
-                Thread.sleep(1); // 1 SECOND
+                Thread.sleep(1000); // 1 SECOND
             } catch (InterruptedException e) {
                 System.out.println("Interrupted!");
             }
