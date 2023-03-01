@@ -20,7 +20,8 @@ public class CApiSESExecute {
             Runnable task4 = () -> System.out.println("Hello Task4");
             ScheduledFuture<?> r1 = service.schedule(task1, 0, TimeUnit.SECONDS);
             ScheduledFuture<String> r2 = service.schedule(task2, 0, TimeUnit.SECONDS);
-            service.scheduleWithFixedDelay(task3, 0, 5, TimeUnit.SECONDS);
+            var a = service.scheduleWithFixedDelay(task3, 0, 5, TimeUnit.SECONDS);
+
             service.scheduleAtFixedRate(task4, 0, 5, TimeUnit.SECONDS);// first value is initial and last is every unit
             // System.out.println(r2);
         } catch (Exception e) {
