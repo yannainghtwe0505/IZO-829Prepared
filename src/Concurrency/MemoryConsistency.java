@@ -4,6 +4,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class MemoryConsistency {
     public static void main(String[] args) {
+        // Use concurrent collection instead of normal collecitonsN
         var foodData = new ConcurrentHashMap<String, Integer>();
         foodData.put("penguin", 1);
         foodData.put("flamingo", 2);
