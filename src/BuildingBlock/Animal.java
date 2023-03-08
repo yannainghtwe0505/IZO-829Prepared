@@ -21,6 +21,7 @@ public class Animal {// top level type
     public static int a = 0;
 
     public static void main(String[] args) {
+
         System.out.println("hee");
         Random r = new Random();
         Date d = new Date();
