@@ -11,11 +11,14 @@ public class Test9 {
     }
 
     void getFish(Object fish) {
-        if (!(fish instanceof String guppy))
+        if (!(fish instanceof String guppy)) {
             System.out.print("Eat!");
-        else if (!(fish instanceof String guppy)) {
+        } else if (!(fish instanceof String guppy)) {
             throw new RuntimeException();
         }
+        guppy = "";
         System.out.print("Swim!");
+        System.out.println(guppy);
     }
+
 }
