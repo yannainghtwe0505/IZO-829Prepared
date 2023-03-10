@@ -6,7 +6,7 @@ public class internPool {
 		var name2 = new String("Hello World").intern();
 		System.out.println(name == name2); // true
 
-
+		 var r="rat";
 		 var first = "rat" + 1;
 		 var second = "r" + "a" + "t" + "1";
 		 var third = "r" + "a" + "t" + new String("1");
@@ -14,5 +14,6 @@ public class internPool {
 		 System.out.println(first == second.intern());
 		  System.out.println(first == third);
 		 System.out.println(first == third.intern());
+
 	}
 }
