@@ -37,8 +37,10 @@ public class stringBuilder {
 
 		System.out.println("------builder---------");
 		var builder = new StringBuilder("pigeon dirty");
-		builder.replace(3, 6, "sty");
+		builder.replace(3, 100, "sty");
 		System.out.println(builder); // pigsty dirty
+		var string = "12345";
+		string.replace('3'	, 'd');
 
 	}
 	// Create a new StringBuilder object with an initial capacity of 16 characters

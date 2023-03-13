@@ -2,10 +2,12 @@ package CoreApi;
 
 public class equalAndIngorecase {
 	public static void main(String[] args) {
-		int a[]= {1,2,3};
-		int b[]= {1,2,3};
-		System.out.println(a.equals(b));
-
+		equalAndIngorecase a1=new equalAndIngorecase();
+		equalAndIngorecase a2=new equalAndIngorecase();
+		String a[]= {"1","2","3"};
+		String b[]= {"1","2","3"};
+		System.out.println(a[0].equalsIgnoreCase(b[0]));
+		System.out.println(a1.equals(a2));
 		System.out.println("abc".startsWith("ab")); // true
 		System.out.println("abc".startsWith("A")); // false
 		System.out.println("abc".endsWith("c")); // true

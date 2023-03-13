@@ -2,7 +2,7 @@ package CoreApi;
 import java.util.Arrays;
 public class arraySearch {
 	public static void main(String[] args) {
-		int[] numbers = {2,4,6,8};
+		int[] numbers = {2,4,6,8,8};
 		 System.out.println(Arrays.binarySearch(numbers, 2)); // 0
 		 System.out.println(Arrays.binarySearch(numbers, 4)); // 1
 		 System.out.println(Arrays.binarySearch(numbers, 1)); // -1

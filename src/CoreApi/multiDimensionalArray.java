@@ -6,8 +6,7 @@ public class multiDimensionalArray {
 			int[][] vars1; // 2D array
 			int vars2 [][]; // 2D array
 			int[]vars3    []; // 2D array
-			int[][] []vars4 [][], space [][][]; // a 2D AND a 3D array
-
+			int[][] []vars4 [][], space [][][]; // 
 			var twoD = new int[3][2];
 			for(int i = 0; i < twoD.length; i++) {
 			for(int j = 0; j < twoD[i].length; j++)
