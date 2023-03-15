@@ -1,6 +1,8 @@
 package fundamental;
 
-public class Pack1 {
+import Method.protectedAccess;
+
+public class Pack1{
 	int p1, p2;
 
 	void setP(int p1, int p2) {
@@ -15,7 +17,10 @@ public class Pack1 {
 	}
 
 	public static void main(String[] args) {
+		protectedAccess pk=new protectedAccess();
+		pk.number=20;
 
 	}
+
 
 }
