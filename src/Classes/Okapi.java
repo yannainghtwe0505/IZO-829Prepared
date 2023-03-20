@@ -25,6 +25,7 @@ class GiraffeFamily {
 }
 
 public class Okapi extends GiraffeFamily {
+    private static int aa = 0;
     static {
 	System.out.print("F");
     }
