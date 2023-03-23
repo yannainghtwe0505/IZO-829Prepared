@@ -1,16 +1,6 @@
 package BeyondClasses;
 
-class Penguin {
-    public int getHeight() {
-	return 3;
-    }
-
-    public void printInfo() {
-	System.out.print(this.getHeight());
-    }
-}
-
-public class polymorphism extends Penguin {
+public class polymorphism extends PPenguin {
     public static void main(String[] fish) {
 	new polymorphism().printInfo();
     }
@@ -18,5 +8,15 @@ public class polymorphism extends Penguin {
     @Override
     public int getHeight() {
 	return 8;
+    }
+}
+
+class PPenguin {
+    public int getHeight() {
+	return 3;
+    }
+
+    public void printInfo() {
+	System.out.print(this.getHeight());
     }
 }
