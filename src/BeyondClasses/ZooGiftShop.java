@@ -5,11 +5,15 @@ class bb {
 
 public class ZooGiftShop {
     interface SaleTodayOnly {
+	int a = 50;
 
 	int bool();
 
 	int dollarsOff();
+
     }
+
+    static int a = 40;
 
     public static int admission(int basePrice) {
 	var b = new bb() {

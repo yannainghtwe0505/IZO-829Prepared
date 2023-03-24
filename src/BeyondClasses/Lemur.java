@@ -7,6 +7,7 @@ interface HasTail {
 public class Lemur extends Primate implements HasTail {
     public static void main(String[] args) {
 	Lemur lemur = new Lemur();
+//	Object o=Lemur;
 	System.out.println(lemur.age);
 	HasTail hasTail = lemur;
 	System.out.println(hasTail.isTailStriped());
