@@ -27,7 +27,8 @@ public class TraditionalSearch {
 	animals.add(new Animal("turtle", false, true));
 
 	// pass class that does check
-	print(animals, a -> !a.canSwim());
+//	boolean a=()->true;
+	print(animals, b -> !b.canSwim());
 	print(animals, new CheckIfHopper());
     }
 
