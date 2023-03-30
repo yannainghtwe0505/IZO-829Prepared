@@ -15,4 +15,5 @@ class FieldMouse implements CanBurrow {
 	return null;
     }
 
+    CanBurrow a=new CanBurrow()
 }
