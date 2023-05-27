@@ -13,7 +13,9 @@ class CheckIfHopper implements CheckTrait {
 interface CheckTrait {
     boolean test(Animal a);
 }
-
+interface test{
+	boolean mytest(String a);
+}
 record Animal(String species, boolean canHop, boolean canSwim) {
 }
 
@@ -28,7 +30,9 @@ public class TraditionalSearch {
 
 	// pass class that does check
 //	boolean a=()->true;
-	print(animals, b -> !b.canSwim());
+//	var invalid = (Animal a) -> a.canHop();
+  
+	print(animals, b ->{ return !b.canSwim();});
 	print(animals, new CheckIfHopper());
     }
 
